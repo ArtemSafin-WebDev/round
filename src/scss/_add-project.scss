@@ -1,0 +1,178 @@
+.add-project {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+.add-project__row {
+    display: flex;
+    margin: -1.6rem;
+    flex-wrap: wrap;
+
+    
+}
+
+.add-project__col {
+    width: 50%;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+}
+
+.add-project__heading {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: #333333;
+    margin-bottom: 2.4rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+}
+
+.add-project__upload-photo {
+    position: relative;
+    display: block;
+
+    .no-touch &:hover {
+        .add-project__upload-photo-dropzone {
+            background: #eaeff4;
+        }
+
+        .add-project__upload-photo-dropzone-icon {
+            background: #0a2677;
+
+            svg {
+                fill: white;
+            }
+        }
+    }
+}
+
+.add-project__upload-photo-file-input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.add-project__upload-photo-dropzone {
+    min-height: 32rem;
+    background: #f5f7f9;
+    border: 0.5px dashed rgba(10, 38, 119, 0.5);
+    border-radius: 0.8rem;
+    z-index: 1;
+    display: block;
+    transition: background-color 0.2s;
+    overflow: hidden;
+    position: relative;
+    @include breakpoint(mobile) {
+        min-height: 22rem;
+    }
+}
+
+.add-project__upload-photo-dropzone-icon {
+    width: 19.2rem;
+    height: 19.2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #e1e5f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+
+    @include breakpoint(mobile) {
+        width: 12rem;
+        height: 12rem;
+    }
+    svg {
+        width: 4.5rem;
+        height: 4rem;
+        fill: #0a2677;
+        transition: fill 0.2s;
+    }
+}
+
+.add-project__group {
+    margin-bottom: 4rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.add-project__textarea {
+    flex-grow: 1;
+}
+
+.add-project__submit-btn {
+    padding: 2rem 6rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 3.2rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 0 auto;
+    transition: background-color .2s, color .2s;
+    margin-top: 5.5rem;
+
+    @include breakpoint(mobile) {
+        margin-top: 2rem;
+        padding: 2rem 4rem;
+    }
+    &[disabled] {
+        background: #E8E9EA;
+        color: white;
+        cursor: default;
+    }
+
+    &:not([disabled]):hover {
+        background: #D6000B;
+        color: white;
+    }
+    
+}
+
+
+.add-project__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-project__upload-filename {
+    position: absolute;
+    z-index: 15;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    color: #0a2677;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.add-project__upload-photo-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+}

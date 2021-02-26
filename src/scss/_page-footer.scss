@@ -1,0 +1,113 @@
+.page-footer {
+    background: #f2f3f7;
+    color: #5a5961;
+}
+
+.page-footer__row {
+    display: flex;
+    align-items: center;
+    height: 7rem;
+
+    @include breakpoint(mobile) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2.4rem 0;
+        align-items: initial;
+    }
+}
+
+.page-footer__google-play {
+    flex-shrink: 0;
+    margin-right: 3.2rem;
+    padding: 0.9rem 2rem;
+    border-radius: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #5A5961;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: #5A5961;
+    transition: color 0.2s, border-color 0.2s, color 0.2s;
+
+    @include breakpoint(mobile) {
+        align-self: flex-start;
+        margin-bottom: 2rem;
+    }
+    &:link,
+    &:visited {
+        color: #5A5961;
+    }
+    svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        flex-shrink: 0;
+        margin-right: 1rem;
+    }
+
+    .no-touch &:hover {
+      
+        border-color: #333333;
+        color: #333333;
+    }
+}
+
+.page-footer__social-list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.page-footer__social-list-item {
+    margin-right: 2.4rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.page-footer__social-link {
+    display: block;
+    flex-shrink: 0;
+    color: #5a5961;
+
+    .no-touch &:hover {
+        color: #333333;
+    }
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        flex-shrink: 0;
+    }
+}
+
+.page-footer__policy {
+    font-size: 1.2rem;
+    line-height: 120%;
+    margin-right: 3.2rem;
+    color: #8d9198;
+    @include breakpoint(mobile) {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    &:link,
+    &:visited {
+        color: #8d9198;
+    }
+
+    .no-touch &:hover {
+        color: #333333;
+    }
+}
+
+.page-footer__copyright {
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: #8d9198;
+    flex-shrink: 0;
+}

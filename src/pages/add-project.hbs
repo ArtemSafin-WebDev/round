@@ -1,0 +1,81 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="add-project ">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#" class="breadcrumbs__link">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" class="breadcrumbs__link">
+                        Скиллы
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#" class="breadcrumbs__link">
+                        Челленджи
+                    </a>
+                </li>
+                <li class="breadcrumbs__list-item active">
+                    <a href="#" class="breadcrumbs__link">
+                        Добавление проекта
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <form action="/" method="POST" class="add-project__form js-add-project">
+            <div class="add-project__row">
+                <div class="add-project__col">
+                    <div class="add-project__group">
+                        <h3 class="add-project__heading">
+                            Прикрепите фото или видео
+                        </h3>
+                        <label class="add-project__upload-photo">
+                            <input type="file" class="add-project__upload-photo-file-input" accept="image/*">
+                            <span class="add-project__upload-photo-dropzone">
+
+                                <span class="add-project__upload-photo-dropzone-icon">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-camera">
+                                        <use xlink:href="#camera"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="add-project__upload-filename">
+
+                            </span>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="add-project__col">
+
+
+                    <div class="add-project__group">
+                        <h3 class="add-project__heading">
+                            Название проекта
+                        </h3>
+                        <input type="text" class="text-input">
+                    </div>
+                    <div class="add-project__group">
+                        <h3 class="add-project__heading">
+                            Описание проекта
+                        </h3>
+                        <textarea class="text-input add-project__textarea"></textarea>
+
+                    </div>
+                </div>
+            </div>
+            <button class="add-project__submit-btn" type="submit" disabled>
+                Опубликовать
+            </button>
+        </form>
+
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}
