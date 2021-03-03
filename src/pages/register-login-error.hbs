@@ -1,0 +1,67 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="register">
+    <div class="container">
+        <div class="register__content">
+            <form action="/" method="POST" class="register__form">
+                <h4 class="register__form-heading">
+                    Вход
+                </h4>
+
+                <div class="register__form-row">
+                    <h4 class="register__form-row-heading">
+                        Никнейм или почта
+                    </h4>
+                    <div class="register__form-input-wrapper">
+                        <input type="text" class="text-input text-input--error register__form-input" value="@Matve1">
+
+                    </div>
+
+
+                </div>
+                <div class="register__form-row">
+                    <h4 class="register__form-row-heading">
+                        Пароль
+                    </h4>
+                    <div class="register__form-input-wrapper">
+                        <input type="password" class="text-input text-input--error register__form-input">
+                        <button class="register__form-show-password js-show-password" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-eye">
+                                <use xlink:href="#eye"></use>
+                            </svg>
+                            <svg width="14" height="14" aria-hidden="true" class="icon-eye-closed">
+                                <use xlink:href="#eye-closed"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="register__form-remark register__form-remark--orange">
+                        Введи никнейм или адрес электронной почты, указанные при регистрации
+                    </div>
+                    <div class="register__login-btns">
+                        <a href="#" class="register__remember-password">
+                            Забыл пароль?
+                        </a>
+                        <span class="register__login-btns-divider">
+
+                        </span>
+                        <a href="#" class="register__remember-password register__remember-password--blue">
+                            Сбросить пароль
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <button class="register__form-next-btn" type="submit">
+                    Войти
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}

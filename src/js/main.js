@@ -12,6 +12,8 @@ import addProject from './addProject';
 import experimentGallery from './experimentGallery';
 import experimentDescription from './experimentDescription';
 import mobileMenu from './mobileMenu';
+import showPassword from './showPassword';
+import avatarUpload from './avatarUpload';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -27,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     experimentGallery();
     experimentDescription();
     mobileMenu();
+    showPassword();
+    avatarUpload();
 });
 
 window.addEventListener('load', function() {

@@ -1,0 +1,104 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="register">
+    <div class="container">
+        <div class="register__content">
+            <form action="/" method="POST" class="register__form">
+                <h4 class="register__form-heading">
+                    Регистрация
+                </h4>
+                <div class="register__form-step">
+                    Шаг 2/5
+                </div>
+                <div class="register__form-row">
+                    <h4 class="register__form-row-heading">
+                        Дата рождения
+                    </h4>
+                    <div class="register__time-select">
+                        <div class="register__time-select-inner">
+
+
+                            <div class="register__time-select-row">
+                                <div class="register__time-select-col">
+                                    <select name="date" class="js-custom-select">
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                        <option value="6">06</option>
+                                        <option value="7">07</option>
+                                        <option value="8">08</option>
+                                    </select>
+                                </div>
+                                <div class="register__time-select-col">
+                                    <select name="month" class="js-custom-select">
+                                        <option value="1">Июнь</option>
+                                        <option value="2">Июль</option>
+                                        <option value="3">Август</option>
+                                        <option value="4">Сентябрь</option>
+                                        <option value="5">Октябрь</option>
+                                        <option value="6">Ноябрь</option>
+                                        <option value="7">Декабрь</option>
+                                        <option value="8">Февраль</option>
+                                    </select>
+                                </div>
+                                <div class="register__time-select-col">
+                                    <select name="month" class="js-custom-select">
+                                        <option value="1">2017</option>
+                                        <option value="2">2018</option>
+                                        <option value="3">2019</option>
+                                        <option value="4">2020</option>
+                                        <option value="5">2021</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="register__form-row">
+                    <h4 class="register__form-row-heading">
+                        Дата рождения
+                    </h4>
+                    <div class="register__form-checkboxes">
+                        <div class="register__form-checkboxes-wrapper">
+
+
+                            <label class="register__form-checkbox">
+
+                                <input type="radio" class="register__form-checkbox-input" name="gender" value="m" checked>
+                                <span class="register__form-checkbox-mark">
+
+                                </span>
+                                <span class="register__form-checkbox-text">
+                                    Мальчик
+                                </span>
+                            </label>
+                            <label class="register__form-checkbox">
+
+                                <input type="radio" class="register__form-checkbox-input" name="gender" value="f">
+                                <span class="register__form-checkbox-mark">
+
+                                </span>
+                                <span class="register__form-checkbox-text">
+                                    Девочка
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="register__form-next-btn" type="submit">
+                    Далее
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}

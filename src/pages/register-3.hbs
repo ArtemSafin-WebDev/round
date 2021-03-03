@@ -1,0 +1,67 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="register">
+    <div class="container">
+        <div class="register__content">
+            <form action="/" method="POST" class="register__form">
+                <h4 class="register__form-heading">
+                    Регистрация
+                </h4>
+                <div class="register__form-step">
+                    Шаг 3/5
+                </div>
+                <div class="register__form-row">
+                    <h4 class="register__form-row-heading">
+                        Придумай пароль
+                    </h4>
+                    <div class="register__form-input-wrapper">
+                        <input type="password" class="text-input register__form-input">
+                        <button class="register__form-show-password js-show-password" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-eye">
+                                <use xlink:href="#eye"></use>
+                            </svg>
+                            <svg width="14" height="14" aria-hidden="true" class="icon-eye-closed">
+                                <use xlink:href="#eye-closed"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="register__form-remark">
+                        Пароль должен содержать не менее 8 символов и состоять из латинских букв и цифр или специальных
+                        символов
+                    </div>
+
+                </div>
+                <div class="register__form-row">
+                    <h4 class="register__form-row-heading">
+                        Подтверди пароль
+                    </h4>
+                    <div class="register__form-input-wrapper">
+                        <input type="password" class="text-input register__form-input">
+                        <button class="register__form-show-password js-show-password" type="button">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-eye">
+                                <use xlink:href="#eye"></use>
+                            </svg>
+                            <svg width="14" height="14" aria-hidden="true" class="icon-eye-closed">
+                                <use xlink:href="#eye-closed"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="register__form-remark register__form-remark--dark">
+                        Введено верно
+                    </div>
+
+                </div>
+
+
+                <button class="register__form-next-btn" type="submit">
+                    Далее
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}

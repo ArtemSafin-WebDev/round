@@ -1,0 +1,40 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="register">
+    <div class="container">
+        <div class="register__content">
+            <form action="/" method="POST" class="register__form">
+                <h4 class="register__form-heading">
+                    Регистрация
+                </h4>
+                <div class="register__form-step">
+                    Шаг 5/5
+                </div>
+
+                <div class="register__form-row">
+                    <h4 class="register__form-row-heading">
+                        Аватар
+                    </h4>
+                    <label class="register__form-avatar-upload js-avatar-upload">
+                        <input type="file" class="register__form-avatar-upload-file" accept="image/*">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-profile">
+                            <use xlink:href="#profile"></use>
+                        </svg>
+                    </label>
+                    <div class="register__form-remark">
+                        Загрузи свой аватар. Героев нужно знать в лицо!
+                    </div>
+                </div>
+
+                <button class="register__form-next-btn" type="submit">
+                    Далее
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}
